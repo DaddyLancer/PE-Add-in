@@ -77,6 +77,7 @@ Partial Class frmCombineSheets
         '
         'lstSelectedSheets
         '
+        Me.lstSelectedSheets.CheckOnClick = True
         Me.lstSelectedSheets.FormattingEnabled = True
         Me.lstSelectedSheets.Location = New System.Drawing.Point(6, 33)
         Me.lstSelectedSheets.Name = "lstSelectedSheets"
@@ -214,7 +215,6 @@ Partial Class frmCombineSheets
         Me.btnHelp.Size = New System.Drawing.Size(30, 30)
         Me.btnHelp.TabIndex = 17
         Me.btnHelp.Text = "?"
-        Me.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnHelp.UseVisualStyleBackColor = True
         '
         'frmCombineSheets
@@ -228,7 +228,7 @@ Partial Class frmCombineSheets
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "frmCombineSheets"
-        Me.Text = "frmCombineSheets"
+        Me.Text = "Combine multiple sheets into one"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
