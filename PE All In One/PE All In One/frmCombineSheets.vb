@@ -1,6 +1,9 @@
 ﻿Imports Microsoft.Office.Interop.Excel
 Public Class frmCombineSheets
-
+    Dim curWorkbook
+    Dim curSelection
+    Dim wrkSheet
+    Dim app
     Dim wsCount As Integer
 
     Private Sub rbnNew_CheckedChanged(sender As Object, e As EventArgs) Handles rbnNew.CheckedChanged
@@ -68,4 +71,24 @@ Public Class frmCombineSheets
             lstSelectedSheets.SetItemChecked(cmbTarget.SelectedIndex, False)
         End If
     End Sub
+
+    Public Function SelectAll(ByVal Book As Workbook, ByVal Sheet As Worksheet)
+        Dim SelectionRange As Range
+
+        Dim lastCol = Sheet.Range("a1").End(XlDirection.xlToRight).Column
+        Dim lastRow = Sheet.Cells(65536, lastCol).End(XlDirection.xlUp).Row
+        Sheet.Range("a1", Sheet.Cells(lastRow, lastCol)).Select()
+
+
+        Return SelectionRange
+    End Function
+
+    Public Sub BuildMerge(ByVal Sheet As Worksheet, ByVal Area As Range)
+
+    End Sub
+
+    Public Sub PasteCombined(ByVal Selections As Ranges, ByVal TargetSheet As Worksheet, ByVal Optional Append As Boolean = False)
+
+    End Sub
+
 End Class
