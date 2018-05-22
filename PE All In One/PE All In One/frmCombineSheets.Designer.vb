@@ -45,7 +45,7 @@ Partial Class frmCombineSheets
         'lblWarning1
         '
         Me.lblWarning1.AutoSize = True
-        Me.lblWarning1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblWarning1.ForeColor = System.Drawing.Color.Maroon
         Me.lblWarning1.Location = New System.Drawing.Point(6, 171)
         Me.lblWarning1.Name = "lblWarning1"
         Me.lblWarning1.Size = New System.Drawing.Size(94, 26)
@@ -57,6 +57,7 @@ Partial Class frmCombineSheets
         '
         Me.rbnNew.AutoSize = True
         Me.rbnNew.Checked = True
+        Me.rbnNew.ForeColor = System.Drawing.Color.LightSkyBlue
         Me.rbnNew.Location = New System.Drawing.Point(9, 60)
         Me.rbnNew.Name = "rbnNew"
         Me.rbnNew.Size = New System.Drawing.Size(76, 17)
@@ -68,6 +69,7 @@ Partial Class frmCombineSheets
         'rbtnExisting
         '
         Me.rbtnExisting.AutoSize = True
+        Me.rbtnExisting.ForeColor = System.Drawing.Color.LightSkyBlue
         Me.rbtnExisting.Location = New System.Drawing.Point(9, 124)
         Me.rbtnExisting.Name = "rbtnExisting"
         Me.rbtnExisting.Size = New System.Drawing.Size(90, 17)
@@ -87,6 +89,7 @@ Partial Class frmCombineSheets
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.Color.LightSkyBlue
         Me.Label1.Location = New System.Drawing.Point(6, 17)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(126, 13)
@@ -96,6 +99,7 @@ Partial Class frmCombineSheets
         'btnAll
         '
         Me.btnAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAll.ForeColor = System.Drawing.Color.LightSkyBlue
         Me.btnAll.Location = New System.Drawing.Point(6, 268)
         Me.btnAll.Name = "btnAll"
         Me.btnAll.Size = New System.Drawing.Size(65, 23)
@@ -106,6 +110,7 @@ Partial Class frmCombineSheets
         'btnInvert
         '
         Me.btnInvert.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnInvert.ForeColor = System.Drawing.Color.LightSkyBlue
         Me.btnInvert.Location = New System.Drawing.Point(6, 297)
         Me.btnInvert.Name = "btnInvert"
         Me.btnInvert.Size = New System.Drawing.Size(148, 23)
@@ -116,6 +121,7 @@ Partial Class frmCombineSheets
         'btnNone
         '
         Me.btnNone.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnNone.ForeColor = System.Drawing.Color.LightSkyBlue
         Me.btnNone.Location = New System.Drawing.Point(89, 268)
         Me.btnNone.Name = "btnNone"
         Me.btnNone.Size = New System.Drawing.Size(65, 23)
@@ -136,6 +142,7 @@ Partial Class frmCombineSheets
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.ForeColor = System.Drawing.Color.LightSkyBlue
         Me.Label2.Location = New System.Drawing.Point(3, 17)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(140, 26)
@@ -155,6 +162,7 @@ Partial Class frmCombineSheets
         '
         Me.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancel.ForeColor = System.Drawing.Color.LightSkyBlue
         Me.btnCancel.Location = New System.Drawing.Point(6, 297)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(137, 23)
@@ -166,6 +174,7 @@ Partial Class frmCombineSheets
         '
         Me.btnCombine.DialogResult = System.Windows.Forms.DialogResult.OK
         Me.btnCombine.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCombine.ForeColor = System.Drawing.Color.LightSkyBlue
         Me.btnCombine.Location = New System.Drawing.Point(6, 268)
         Me.btnCombine.Name = "btnCombine"
         Me.btnCombine.Size = New System.Drawing.Size(137, 23)
@@ -180,6 +189,7 @@ Partial Class frmCombineSheets
         Me.GroupBox1.Controls.Add(Me.btnAll)
         Me.GroupBox1.Controls.Add(Me.btnInvert)
         Me.GroupBox1.Controls.Add(Me.btnNone)
+        Me.GroupBox1.ForeColor = System.Drawing.Color.LightSkyBlue
         Me.GroupBox1.Location = New System.Drawing.Point(12, 13)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(160, 328)
@@ -198,6 +208,7 @@ Partial Class frmCombineSheets
         Me.GroupBox2.Controls.Add(Me.lblWarning1)
         Me.GroupBox2.Controls.Add(Me.txtSheetName)
         Me.GroupBox2.Controls.Add(Me.rbtnExisting)
+        Me.GroupBox2.ForeColor = System.Drawing.Color.LightSkyBlue
         Me.GroupBox2.Location = New System.Drawing.Point(178, 13)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(149, 328)
@@ -210,6 +221,7 @@ Partial Class frmCombineSheets
         Me.btnHelp.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnHelp.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHelp.ForeColor = System.Drawing.Color.LightSkyBlue
         Me.btnHelp.Location = New System.Drawing.Point(113, 232)
         Me.btnHelp.Name = "btnHelp"
         Me.btnHelp.Size = New System.Drawing.Size(30, 30)
