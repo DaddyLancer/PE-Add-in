@@ -73,14 +73,16 @@ Public Class frmCombineSheets
     End Sub
 
     Public Function SelectAll(ByVal Book As Workbook, ByVal Sheet As Worksheet)
+
         Dim SelectionRange As Range
+        Try
+            SelectionRange = Sheet.Range("a2").SpecialCells(XlCellType.xlCellTypeLastCell)
+            SelectionRange.Copy()
+            Return SelectionRange
+        Catch ex As Exception
+            Return Nothing
+        End Try
 
-        Dim lastCol = Sheet.Range("a1").End(XlDirection.xlToRight).Column
-        Dim lastRow = Sheet.Cells(65536, lastCol).End(XlDirection.xlUp).Row
-        Sheet.Range("a1", Sheet.Cells(lastRow, lastCol)).Select()
-
-
-        Return SelectionRange
     End Function
 
     Public Sub BuildMerge(ByVal Sheet As Worksheet, ByVal Area As Range)
